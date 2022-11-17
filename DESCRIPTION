@@ -1,0 +1,15 @@
+Package: spdl
+Type: Package
+Title: Wrapper for 'RcppSpdlog' Functions
+Description: Logging functions in 'RcppSpdlog' provide access to the logging
+ functionality from the 'spdlog' C++ library. This package offers shorter convenience
+ wrappers for the R functions which match the C++ functions, namely via, say,
+ `spdl::debug()` at the debug level. The actual formatting is done by the
+ `fmt::format()` function from the `fmtlib` library (that is also `std::format()`
+ in C++20 or later).
+Version: 0.0.1
+Author: Dirk Eddelbuettel
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+License: GPL (>= 2)
+Imports: RcppSpdlog
+RoxygenNote: 6.0.1

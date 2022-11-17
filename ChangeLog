@@ -1,0 +1,12 @@
+2022-11-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Initial commit
+	* NAMESPACE: Idem
+	* README.md: Idem
+	* R/init.R: Idem
+	* R/wrap.R: Idem
+	* man/setup.Rd: Idem
+
+	* .github/workflows/ci.yaml: Added
+	* .Rbuildignore: Idem
+	* .gitignore: Idem

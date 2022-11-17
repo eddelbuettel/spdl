@@ -1,0 +1,5 @@
+.*\.tar\.gz
+^\.editorconfig$
+^docs-src
+^docs
+^\.github$

@@ -1,3 +1,8 @@
+2022-11-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* tests/simpleTest.R: Idem
+	* tests/simpleTest.Rout.save: Idem
+
 2022-11-16  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Initial commit

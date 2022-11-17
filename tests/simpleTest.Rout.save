@@ -1,0 +1,39 @@
+
+R version 4.2.2 Patched (2022-11-10 r83330) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> spdl::setup("demoForTest", "warn")      # new logger
+> spdl::set_pattern("[%n] [%l] %v"); 	# special pattern _without time or pid_ for Rout.save use
+> 
+> spdl::trace("This will not be seen.")
+> spdl::debug("Neither will this.")
+> spdl::info("Nor this.")
+> spdl::warn("But we will see this message")
+[demoForTest] [warning] But we will see this message
+> spdl::warn("Format {} and {} and {}", 42L, 1.23, TRUE)
+[demoForTest] [warning] Format 42 and 1.23 and TRUE
+> 
+> spdl::set_level("debug")
+> spdl::trace("This will still not be seen.")
+> spdl::debug("But this will: {}.", "Yay!!")
+[demoForTest] [debug] But this will: Yay!!.
+> spdl::info("And this. {} and {}", 42L, 43)
+[demoForTest] [info] And this. 42 and 43
+> 
+> proc.time()
+   user  system elapsed 
+  0.155   0.011   0.159 

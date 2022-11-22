@@ -10,11 +10,11 @@
 The [RcppSpdlog](https://github.com/eddelbuettel/rcppspdlog) repository (and
 [CRAN package](https://cran.r-project.org/package=RcppSpdlog)) provides
 access to the wonderful [spdlog](https://github.com/gabime/spdlog) library
-along with the [fmt]([fmt](https://github.com/fmtlib/fmt)) library. 
+along with the [fmt](https://github.com/fmtlib/fmt) library. 
 
 This permits use in C++ extensions for R by offering the
 [spdlog](https://github.com/gabime/spdlog) (header-only) library along with
-the (header-only) [fmt]([fmt](https://github.com/fmtlib/fmt)) library (by
+the (header-only) [fmt](https://github.com/fmtlib/fmt) library (by
 using `LinkingTo` as described in [Section 1.1.3 of
 WRE](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Package-Dependencies)).
 More recently,
@@ -63,7 +63,7 @@ strings argument _through the restrictive C language Foreign Function
 Interface_ to [RcppSpdlog](https://github.com/eddelbuettel/rcppspdlog) where
 it can be passed to the C++ layer available there.
 
-This also mean we use the [fmt]([fmt](https://github.com/fmtlib/fmt)) library
+This also mean we use the [fmt](https://github.com/fmtlib/fmt) library
 in both languages as the formatter.  We prefer this is over other
 string-interpolating libraries in R which are similar but subtly
 different. Should their use be desired, they can of course be used: the

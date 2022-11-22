@@ -3,6 +3,9 @@
 	* R/wrap.R (.fmt): Do not use \dontrun
 	* man/setup.Rd: Idem
 
+	* README.md: Small edits
+	* DESCRIPTION: Idem
+
 2022-11-17  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/NEWS.Rd: Added

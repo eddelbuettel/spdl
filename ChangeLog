@@ -1,3 +1,7 @@
+2022-11-22  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add badges, small edits
+
 2022-11-21  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Initial release 0.0.1

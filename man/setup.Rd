@@ -11,6 +11,8 @@
 \alias{warn}
 \alias{error}
 \alias{critical}
+\alias{fmt}
+\alias{cat}
 \title{Convenience Wrappers for 'RcppSpdlog' Logging From 'spdlog'}
 \usage{
 setup(name = "default", level = "warn")
@@ -32,6 +34,10 @@ warn(s, ...)
 error(s, ...)
 
 critical(s, ...)
+
+fmt(s, ...)
+
+cat(...)
 }
 \arguments{
 \item{name}{Character value for the name of the logger instance}

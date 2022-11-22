@@ -1,5 +1,7 @@
 2022-11-22  Dirk Eddelbuettel  <edd@debian.org>
 
+	* R/wrap.R (fmt, cat): Export cat() and fmt()
+
 	* README.md: Add badges, small edits
 
 2022-11-21  Dirk Eddelbuettel  <edd@debian.org>

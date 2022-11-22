@@ -1,11 +1,4 @@
 
-.fmt <- function(s, ...) {
-    n <- ...length()
-    v <- character(n)
-    for (i in seq_len(n)) v[i] <- format(...elt(i))
-    RcppSpdlog::formatter(s, v)         # actual fmtlib::fmt formatting
-}
-
 ##' Convenience Wrappers for 'RcppSpdlog' Logging From 'spdlog'
 ##'
 ##' Several short wrappers for functions from 'RcppSpdlog' package are provided
@@ -43,19 +36,30 @@ set_pattern <- function(s)       RcppSpdlog::log_set_pattern(s)
 set_level   <- function(s)       RcppSpdlog::log_set_level(s)
 
 ##' @rdname setup
-trace       <- function(s, ...)  RcppSpdlog::log_trace(.fmt(s,...))
+trace       <- function(s, ...)  RcppSpdlog::log_trace(fmt(s,...))
 
 ##' @rdname setup
-debug       <- function(s, ...)  RcppSpdlog::log_debug(.fmt(s,...))
+debug       <- function(s, ...)  RcppSpdlog::log_debug(fmt(s,...))
 
 ##' @rdname setup
-info        <- function(s, ...)  RcppSpdlog::log_info(.fmt(s,...))
+info        <- function(s, ...)  RcppSpdlog::log_info(fmt(s,...))
 
 ##' @rdname setup
-warn        <- function(s, ...)  RcppSpdlog::log_warn(.fmt(s,...))
+warn        <- function(s, ...)  RcppSpdlog::log_warn(fmt(s,...))
 
 ##' @rdname setup
-error       <- function(s, ...)  RcppSpdlog::log_error(.fmt(s,...))
+error       <- function(s, ...)  RcppSpdlog::log_error(fmt(s,...))
 
 ##' @rdname setup
-critical    <- function(s, ...)  RcppSpdlog::log_critical(.fmt(s,...))
+critical    <- function(s, ...)  RcppSpdlog::log_critical(fmt(s,...))
+
+##' @rdname setup
+fmt <- function(s, ...) {
+    n <- ...length()
+    v <- character(n)
+    for (i in seq_len(n)) v[i] <- format(...elt(i))
+    RcppSpdlog::formatter(s, v)         # actual fmtlib::fmt formatting
+}
+
+##' @rdname setup
+cat <- function(...) { base::cat(fmt(...), "\n") }

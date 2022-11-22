@@ -1,5 +1,11 @@
+2022-11-21  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/wrap.R (.fmt): Do not use \dontrun
+	* man/setup.Rd: Idem
+
 2022-11-17  Dirk Eddelbuettel  <edd@debian.org>
 
+	* inst/NEWS.Rd: Added
 	* tests/simpleTest.R: Idem
 	* tests/simpleTest.Rout.save: Idem
 

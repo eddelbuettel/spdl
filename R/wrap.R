@@ -25,14 +25,12 @@
 ##' @param ... Supplementary arguments for the logging string
 ##' @return Nothing is returned from these functions as they are invoked for their side-effects.
 ##' @examples
-##' \dontrun{
 ##' spdl::setup("exampleDemo", "warn")
 ##' spdl::info("Not seen as level 'info' below 'warn'")
 ##' spdl::warn("This warning message is seen")
 ##' spdl::set_level("info")
 ##' spdl::info("Now this informational message is seen too")
 ##' spdl::info("Calls use fmtlib::fmt {} as we can see {}", "under the hood", 42L)
-##' }
 setup       <- function(name = "default", level = "warn") RcppSpdlog::log_setup(name, level)
 
 ##' @rdname setup

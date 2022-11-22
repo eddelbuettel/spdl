@@ -58,12 +58,10 @@ so the \code{\{\}} is the placeholder for simple (scalar) arguments (for which t
 default R formatter is called before passing on a character representation).
 }
 \examples{
-\dontrun{
 spdl::setup("exampleDemo", "warn")
 spdl::info("Not seen as level 'info' below 'warn'")
 spdl::warn("This warning message is seen")
 spdl::set_level("info")
 spdl::info("Now this informational message is seen too")
 spdl::info("Calls use fmtlib::fmt {} as we can see {}", "under the hood", 42L)
-}
 }

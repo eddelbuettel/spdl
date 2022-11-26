@@ -1,5 +1,7 @@
 2022-11-26  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Roll minor version and date
+
 	* tests/simpleTest.R: Add simple tests for cat() and fmt()
 	* tests/simpleTest.Rout.save: Reference output
 

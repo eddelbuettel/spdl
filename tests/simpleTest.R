@@ -12,3 +12,9 @@ spdl::set_level("debug")
 spdl::trace("This will still not be seen.")
 spdl::debug("But this will: {}.", "Yay!!")
 spdl::info("And this. {} and {}", 42L, 43)
+
+dt <- as.Date("2022-11-26")
+txt <- spdl::fmt("Int {} Double {} Bool {} Date {}", 42L, 1.23, TRUE, dt)
+cat(txt, "\n")
+
+spdl::cat("Int {} Double {} Bool {} Date {}", 42L, 1.23, TRUE, dt)

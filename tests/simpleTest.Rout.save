@@ -34,6 +34,14 @@ Type 'q()' to quit R.
 > spdl::info("And this. {} and {}", 42L, 43)
 [demoForTest] [info] And this. 42 and 43
 > 
+> dt <- as.Date("2022-11-26")
+> txt <- spdl::fmt("Int {} Double {} Bool {} Date {}", 42L, 1.23, TRUE, dt)
+> cat(txt, "\n")
+Int 42 Double 1.23 Bool TRUE Date 2022-11-26 
+> 
+> spdl::cat("Int {} Double {} Bool {} Date {}", 42L, 1.23, TRUE, dt)
+Int 42 Double 1.23 Bool TRUE Date 2022-11-26 
+> 
 > proc.time()
    user  system elapsed 
-  0.155   0.011   0.159 
+  0.144   0.011   0.150 

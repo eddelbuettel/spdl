@@ -38,7 +38,7 @@ this (if we use `sprintf()` to assemble the message)
 
 ```R
 # in R
-RcppSpdlog::log_debug(sprintf("Text with %s text %s which is %s", "auto", "expansion", 42L);
+RcppSpdlog::log_debug(sprintf("Text with %s text %s which is %s", "auto", "expansion", 42L)
 ```
 
 and that irked us.  Enter this package!  By owning the `spld` namespace (in
@@ -54,7 +54,7 @@ as well as (still using `sprintf()`)
 
 ```R
 # in R
-spdl::debug(sprintf("Text with %s text %s which is %s", "auto", "expansion", 42L));
+spdl::debug(sprintf("Text with %s text %s which is %s", "auto", "expansion", 42L))
 ```
 
 which is _much better_ as it avoids context switching. Better still, with the
@@ -63,7 +63,7 @@ worry about format details_:
 
 ```R
 # in R
-spdl::debug("Text with {} text {} which is {}", "auto", "expansion", 42L);
+spdl::debug("Text with {} text {} which is {}", "auto", "expansion", 42L)
 ```
 
 

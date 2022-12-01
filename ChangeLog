@@ -1,5 +1,7 @@
 2022-12-01  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Initial release 0.0.2
+
 	* README.md (spdl): More edits
 
 2022-11-29  Dirk Eddelbuettel  <edd@debian.org>

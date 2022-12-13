@@ -14,7 +14,7 @@
 ##'
 ##' @param name Character value for the name of the logger instance
 ##' @param level Character value for the logging level
-##' @param s Character value for pattern, level, or logging message
+##' @param s Character value for filename, pattern, level, or logging message
 ##' @param ... Supplementary arguments for the logging string
 ##' @return Nothing is returned from these functions as they are invoked for their side-effects.
 ##' @examples
@@ -25,6 +25,9 @@
 ##' spdl::info("Now this informational message is seen too")
 ##' spdl::info("Calls use fmtlib::fmt {} as we can see {}", "under the hood", 42L)
 setup       <- function(name = "default", level = "warn") RcppSpdlog::log_setup(name, level)
+
+##' @rdname setup
+filesetup   <- function(s, name = "default", level = "warn") RcppSpdlog::log_filesetup(s, name, level)
 
 ##' @rdname setup
 drop        <- function(s)       RcppSpdlog::log_drop(s)

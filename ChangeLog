@@ -1,5 +1,8 @@
 2022-12-13  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date, Remotes): Roll minor version and date;
+	add remote for rcppspdlog
+
 	* R/wrap.R (filesetup): Add filesetup method
 
 2022-12-01  Dirk Eddelbuettel  <edd@debian.org>

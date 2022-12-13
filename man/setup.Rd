@@ -2,6 +2,7 @@
 % Please edit documentation in R/wrap.R
 \name{setup}
 \alias{setup}
+\alias{filesetup}
 \alias{drop}
 \alias{set_pattern}
 \alias{set_level}
@@ -16,6 +17,8 @@
 \title{Convenience Wrappers for 'RcppSpdlog' Logging From 'spdlog'}
 \usage{
 setup(name = "default", level = "warn")
+
+filesetup(s, name = "default", level = "warn")
 
 drop(s)
 
@@ -44,7 +47,7 @@ cat(...)
 
 \item{level}{Character value for the logging level}
 
-\item{s}{Character value for pattern, level, or logging message}
+\item{s}{Character value for filename, pattern, level, or logging message}
 
 \item{...}{Supplementary arguments for the logging string}
 }

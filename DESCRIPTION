@@ -11,8 +11,7 @@ Version: 0.0.2.1
 Date: 2022-12-13
 Authors@R: person("Dirk", "Eddelbuettel", role = c("aut","cre"), email = "edd@debian.org")
 License: GPL (>= 2)
-Imports: RcppSpdlog (>= 0.0.10)
+Imports: RcppSpdlog (>= 0.0.11)
 URL: https://github.com/eddelbuettel/spdl
 BugReports: https://github.com/eddelbuettel/spdl/issues
 RoxygenNote: 6.0.1
-Remotes: eddelbuettel/rcppspdlog

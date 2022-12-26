@@ -7,8 +7,8 @@ Description: Logging functions in 'RcppSpdlog' provide access to the logging
  'spdl::debug()' at the debug level. The actual formatting is done by the
  'fmt::format()' function from the 'fmtlib' library (that is also 'std::format()'
  in 'C++20' or later).
-Version: 0.0.3
-Date: 2022-12-14
+Version: 0.0.3.1
+Date: 2022-12-26
 Authors@R: person("Dirk", "Eddelbuettel", role = c("aut","cre"), email = "edd@debian.org")
 License: GPL (>= 2)
 Imports: RcppSpdlog (>= 0.0.11)

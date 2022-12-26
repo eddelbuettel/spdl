@@ -1,5 +1,7 @@
 2022-12-26  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Roll minor version and date
+
 	* R/wrap.R (stopwatch,elapsed): Wrap two stopwatch functions
 
 2022-12-14  Dirk Eddelbuettel  <edd@debian.org>

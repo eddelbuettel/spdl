@@ -66,3 +66,9 @@ fmt <- function(s, ...) {
 
 ##' @rdname setup
 cat <- function(...) { base::cat(fmt(...), "\n") }
+
+##' @rdname setup
+stopwatch <- function() RcppSpdlog::get_stopwatch()
+
+##' @rdname setup
+elapsed <- function(w) RcppSpdlog::elapsed_stopwatch(w)

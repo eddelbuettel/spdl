@@ -60,7 +60,7 @@ critical    <- function(s, ...)  RcppSpdlog::log_critical(fmt(s,...))
 fmt <- function(s, ...) {
     n <- ...length()
     v <- character(n)
-    for (i in seq_len(n)) v[i] <- format(...elt(i))
+    for (i in seq_len(n)) v[i] <- format(...elt(i)[1])
     RcppSpdlog::formatter(s, v)         # actual fmtlib::fmt formatting
 }
 

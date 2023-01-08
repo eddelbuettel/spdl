@@ -14,6 +14,8 @@
 \alias{critical}
 \alias{fmt}
 \alias{cat}
+\alias{stopwatch}
+\alias{elapsed}
 \title{Convenience Wrappers for 'RcppSpdlog' Logging From 'spdlog'}
 \usage{
 setup(name = "default", level = "warn")
@@ -41,6 +43,10 @@ critical(s, ...)
 fmt(s, ...)
 
 cat(...)
+
+stopwatch()
+
+elapsed(w)
 }
 \arguments{
 \item{name}{Character value for the name of the logger instance}
@@ -50,6 +56,8 @@ cat(...)
 \item{s}{Character value for filename, pattern, level, or logging message}
 
 \item{...}{Supplementary arguments for the logging string}
+
+\item{w}{Stopwatch object}
 }
 \value{
 Nothing is returned from these functions as they are invoked for their side-effects.

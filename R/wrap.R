@@ -15,6 +15,7 @@
 ##' @param name Character value for the name of the logger instance
 ##' @param level Character value for the logging level
 ##' @param s Character value for filename, pattern, level, or logging message
+##' @param w Stopwatch object
 ##' @param ... Supplementary arguments for the logging string
 ##' @return Nothing is returned from these functions as they are invoked for their side-effects.
 ##' @examples

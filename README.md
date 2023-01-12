@@ -92,7 +92,7 @@ Note that because the package uses functions names also present in the base R
 packages (namely `cat`, `debug`, `drop`, `trace`) we do *not* recommend
 loading the package. Instead, call it with the explicit prefix as _e.g._
 `spdl::debug("Some message {}", foo)`. As a selective `importFrom` one can
-always do `importFrom("spdl", "log_setup")` combined with the explicit
+always do `importFrom("spdl", "setup")` combined with the explicit
 pre-fix use.
 
 ### Author

@@ -1,3 +1,9 @@
+2023-06-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/wrap.R (log): Define two simple setup aliases 'init()' and 'log'
+	requiring only a level and setting a default display name of 'R'
+	* man/setup.Rd: Update docs
+
 2023-01-08  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.4

@@ -2,6 +2,8 @@
 % Please edit documentation in R/wrap.R
 \name{setup}
 \alias{setup}
+\alias{init}
+\alias{log}
 \alias{filesetup}
 \alias{drop}
 \alias{set_pattern}
@@ -19,6 +21,10 @@
 \title{Convenience Wrappers for 'RcppSpdlog' Logging From 'spdlog'}
 \usage{
 setup(name = "default", level = "warn")
+
+init(level = "warn")
+
+log(level = "warn")
 
 filesetup(s, name = "default", level = "warn")
 
@@ -76,6 +82,7 @@ default R formatter is called before passing on a character representation).
 }
 \examples{
 spdl::setup("exampleDemo", "warn")
+# and  spdl::init("warn")  and  spdl::log("warn")  are shortcuts
 spdl::info("Not seen as level 'info' below 'warn'")
 spdl::warn("This warning message is seen")
 spdl::set_level("info")

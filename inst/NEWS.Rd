@@ -3,6 +3,13 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/spdl/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/spdl/issues/#1}{##1}}
 
+\section{Changes in spdl version 0.0.5 (2023-06-18)}{
+  \itemize{
+    \item Add simple aliases \code{init()} and \code{log()} wrapping
+    \code{setup()} but requiring only the logging level argument
+  }
+}
+
 \section{Changes in spdl version 0.0.4 (2023-01-08)}{
   \itemize{
     \item Add support for \code{stopwatch}

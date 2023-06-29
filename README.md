@@ -3,6 +3,7 @@
 
 [![CI](https://github.com/eddelbuettel/spdl/actions/workflows/ci.yaml/badge.svg)](https://github.com/eddelbuettel/spdl/actions/workflows/ci.yaml)
 [![CRAN](https://www.r-pkg.org/badges/version/spdl)](https://cran.r-project.org/package=spdl)
+[![r-universe](https://eddelbuettel.r-universe.dev/badges/spdl)](https://eddelbuettel.r-universe.dev/spdl)
 [![Dependencies](https://tinyverse.netlify.com/badge/spdl)](https://cran.r-project.org/package=spdl)
 [![Downloads](https://cranlogs.r-pkg.org/badges/spdl?color=brightgreen)](https://www.r-pkg.org/pkg/spdl)
 [![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-2.0.html)
